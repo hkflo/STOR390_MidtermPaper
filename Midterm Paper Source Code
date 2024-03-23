@@ -1,0 +1,52 @@
+---
+title: "Flo_MidtermPaper"
+author: "Hailey Flo"
+date: "2024-03-22"
+output:
+  pdf_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+The paper I have chosen to analyze for my project is titled “Food and Beverage Advertising to Children and Adolescents on Television: A Baseline Study.” This article argues there has been a reported increase in Canadian child obesity in recent years and seeks to understand whether TV advertisements have played a role in shaping the unhealthy eating habits of these children. 
+The authors hypothesized that food and beverage marketing, specifically through television, adversely impacts the diets of young children due to the appealing nature of the ads. Canadian youth watch an estimated fourteen to seventeen hours of television per week and are exposed to significantly more unhealthy food advertisements than healthy ones.
+	
+
+In order to test their assumption, researchers gathered public information from the Canadian Radio-television and Telecommunications Commission’s (CRTC) program logs. These logs are submitted monthly from over three-hundred television broadcasters to the Canadian government and contain data regarding the advertisements shown during published TV programs. 
+The Canadian government collects this information before making it open to the public. Variables contained in these logs include **broadcast date**, **duration**, **program title**, the intended **target age group**, and others. Through analyzing these records, connections were drawn regarding the types of ads shown to different age demographics on Canadian TV broadcasts. 
+	
+  
+The first step in the researcher’s methodology was to download television program logs for the months of January through December of 2018, collecting one full year of data to analyze. The year’s data was then imported into SAS version 9.4 to convert it into a fully numeric dataset and ensure it was clean. To begin the process, they started by filtering the logs based on records classified as advertising units. 
+The content of these ads could include commercial messages, giveaways, merchandising, solicitation, or sponsorships – essentially anything that might promote a brand or good. Then, the researchers had to manually sort through advertising data and separate it based on food-related content. Any ads that did not fall into the food or beverage category based on their program titles were excluded. 
+Advertisements for food and beverage products, diet products, food delivery services, meal kits and subscriptions, restaurants, fast food, and grocery stores were all placed into the food category for further consideration. 
+	
+
+The next step in analysis was to begin statistical calculations. A couple of variables were generated and added to the dataset as a means to examine the association between target age group and rate of food advertising. First was the **rate of food and beverage advertising**, which was found by dividing the average number of food and beverage ads divided by hour of programming. 
+Second was the **frequency of food and beverage ads by food category**, calculated as the sum number of ads for each type of food ad (grocery, services, etc.). These two variables were then further separated based on the target age group. These age groups are defined in relation to the TV program’s targeted audience and include 4 classes: preschoolers (0-5 years), children (6-12 years), adolescents (13-17 years) and adults (18+ years). 
+Using these two additional variables, the researchers were then able to test the effect of the target age group on advertising rates using simple linear and multiple linear regression models.
+	
+
+A simple linear regression model was used to examine the effect of the target age group on the rate of food ads in a TV program. This model found that the average annual rate of food ads was highest for adults, and significantly lower for youth age groups. The number of food ads per hour was lower by 3.5 for preschoolers, 2.6 for children, and 0.7 for adolescents. 
+Multiple linear regression models were formed using the variables target age group, TV station, and month to survey the difference in food ad rates per age group for each station and month. This regression model concluded that time of the year, age group and TV station were all statistically significant in determining the food advertising rate. 
+These factors explained 91% of the variation altogether. Furthermore, they saw that the food ad rate varied considerably between television stations, and those that were non-child-speciality stations were more likely to show food ads during programs for youth than adults. For example, the Lifetime network showed a higher rate of food ads during preschool programs than the Disney Channel did.
+  
+
+Lastly, a full regression model was made using all 271 TV stations to investigate food ad rates amongst each age group. This model supported the findings from the previous multiple linear regression model in that it also illustrated differences in ad rates between child-specialty (i.e. Disney and Nickelodeon) and non-child-specialty stations. For channels targeted to kids, the station displayed much fewer food ads to age groups under 18. 
+The opposite was true for non-child-specialty stations, for which the majority showed higher rates of food ads for at least one age group under 18 in comparison to the adult programs. 
+The researchers also conducted a Pearson’s chi-squared test on the proportion of food ads for each food category by age group to support their analysis. There was a statistically significant difference between target age group and food category shown during ads. The majority of ads shown to preschoolers and children were for food and beverage products, including snacks and candy, totalling 53.7% and 73.5% respectively. 
+Adolescents were shown fast food advertisements 51.1% of the time, while adults were either shown products (47.5%) or fast food ads (39%). 
+
+
+The research of this paper concludes that although there is a difference in advertising rates among age groups, Canadian youth overall are not being shown a higher rate of unhealthy food ads compared to adults across the board. Some TV stations are showing higher rates of ads to kids while others are not. 
+Regardless, there was statistical evidence showing that numerous unhealthy food ads are being shown to young children who are most likely being influenced by these broadcasts. Child-specialty stations like Nickelodeon and Spark did have high rates of food advertising, specifically for processed food and beverage products.
+
+
+This leads directly into the normative concern of the paper, which is whether or not youth under 18 should be shown food advertisements that might negatively impact their eating habits. The authors explicitly reference claims made by the World Health organization as their basis for researching the topic of child obesity. 
+They explain that the WHO urges countries to regulate and limit the marketing of foods and non-alcoholic beverages high in fat, sugar, and salt, directed at children. Canada has implemented regulation guidelines known as the “Broadcast Code for Advertising to Children” which dictate the type of food ads that can be shown to minors. 
+One of its rules explicitly states that advertising to preschoolers is not permitted, despite the logs of this paper exhibiting clear evidence of it. There is evidently an issue of marketing ethics as it pertains to corporate social responsibility (CSR). The framework of virtue ethics can be connected to the concept of relationship marketing, considering how brands create advertisements with the underlying intent of forming a long-term relationship with consumers. 
+Virtue ethics would argue that establishing brand relationships amongst underage youth is immoral. Similarly, a Rawlsian perspective would consider children as a vulnerable demographic and argue that greater legal constraints on food advertising need to be put in place to protect youth. Looking at the issue from a deontological framework, however, causes the issue to become less straightforward. 
+The corporations developing these ads do have good intentions insofar as generating revenue to benefit their company and their employees. The balance between benefits for marketer stakeholders and those of society, the common good, are called into question. Also, there is the notion of distributive justice. Distribution justice affirms that marketing is fair and just so long as audiences are equally targeted and no groups are being discriminated against. 
+Although children are more vulnerable to marketing tactics, one might argue they deserve equal exposure to public advertisements. Ultimately, there is a pressing normative concern regarding the ethics of food advertising and the age groups being marketed to within this research article.
+
